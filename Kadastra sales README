@@ -1,0 +1,15 @@
+This was the first data set we were able to receive, a list of all property sales in the Czech Republic from 2014-2017.
+
+The major aspect of cleaning it consisted of narrowing sales down to just the greater-Brno area, and then extracting the exact parcel
+  numbers from a text description. For each type of property sale there was a particular pattern for where the parcel number was located.
+  Using the rebus package and constructing functions to find them made after separating into the different parcel types made it possible.
+  
+  
+Ultimately, this data set proved a dead-end for a few reasons:
+  1) There was no easy way to access shapefiles for the Government-coded plot numbers, meaning to get the granularity we needed for an
+      effective analysis we would have to find a pattern of how they were coded manually (impossible given time-constraints)
+      
+  2) We were unable to find the sales price of plots--only that they plots were sold. This meant we did not know whether they were bought
+      because they were in an area of increasing interest, or if it was because they were cheap.
+      
+ 
